@@ -1,0 +1,6 @@
+{
+  "name": "Abord OS",
+  "description": "A fully functional web-based Abord OS desktop environment featuring taskbar, start menu, draggable/resizable windows, virtual notepad, file manager, custom drawing paint, calculator, excel spreadsheet, browser, terminal, and persistent settings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
