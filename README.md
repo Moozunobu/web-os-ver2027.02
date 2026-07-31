@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+## 設定ファイルの集約 (`/src/config/osVersions.ts`)
 
-# Run and deploy your AI Studio app
+新しい OS バージョンや URL を追加・変更したい場合は、`/src/config/osVersions.ts` 内の `OS_VERSIONS` 配列にオブジェクトを1行追加するだけで完了します。
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/6f1aa502-c56e-4289-baf9-a35120ed658f
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```typescript
+export const OS_VERSIONS: OSVersionConfig[] = [
+  {
+    id: 'os_version7.5',
+    name: 'os_version7.5',
+    url: '[https://moozunobu.github.io/web-os-ver7.5/](https://moozunobu.github.io/web-os-ver7.5/)',
+    aliases: ['7.5', 'version7.5', 'ver7.5'],
+  },
+  {
+    id: 'os_version7.2',
+    name: 'os_version7.2',
+    url: '[https://moozunobu.github.io/noob-web-os-ver7.2/](https://moozunobu.github.io/noob-web-os-ver7.2/)',
+    aliases: ['7.2', 'version7.2', 'ver7.2'],
+  },
+  // 💡 新しいバージョンを追加したい場合は、ここに1行追加するだけで自動的にコマンドや選択リストに反映されます。
+];
